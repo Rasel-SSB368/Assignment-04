@@ -1,0 +1,316 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+a, a:hover{
+	text-decoration: none;
+}
+
+/****Colors****/
+/*Green = #015761 */
+/*Yellow = #f7dc4f*/
+/*Grey = #6f6e6e*/
+/*Grey for Background = #f1f0f0*/
+
+
+
+/*******************
+ Header section code starts
+********************/
+
+.header {
+	width: auto;
+	height: 100vh;
+	display: flex;
+}
+
+.header-left {
+	background: #015761;
+	/*width: auto;
+	height: 100vh;*/
+	flex-basis: 50%;
+}
+
+.navbar {
+	margin: 30px 50px;
+}
+.navbar h3 {
+	color: #f7dc4f;
+	font-weight: 500;
+	font-size: 25px;
+}
+
+.navbar ul {
+	list-style: none;
+	padding: 20px 0;
+}
+
+.navbar a {
+	color: white;
+	margin-right: 30px;
+}
+.navbar a:hover {
+	color: #f7dc4f;
+	font-weight: 600;
+}
+
+.intro {
+	padding: 200px;
+}
+.intro-first {
+	color: #f7dc4f;
+	font-size: 47px;
+}
+.intro h1 {
+	color: white;
+	font-size: 105px;
+}
+.intro-last {
+	color: white;
+	font-weight: 200;
+	font-size: 15px;
+}
+.header-right {
+	background-image: url('./img/cover.PNG');
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	flex-basis: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.logo {
+	text-align: center;
+	/*margin-top: 400px;*/
+	position: fixed;
+	right: 0;
+}
+.logo ul {
+	list-style: none;
+	text-align: right;
+}
+.logo ul li a {
+	background: #f7dc4f;
+	padding: 20px 0px;
+	transition: 2.5s;
+}
+.logo ul li a i {
+	width: 40px;
+	background: #f7dc4f;
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+}
+.logo ul li a /*i*/:hover {
+	transform: scale(2);
+	background: transparent;
+	transition: 0.4s;
+} 
+
+
+
+
+
+
+/*********************
+ About me section code start
+**********************/
+
+.about-me {
+	background: #f1f0f0;
+	text-align: center;
+	padding: 60px 0px;
+	padding-bottom: 130px;
+}
+.about-me h3 {
+	color: #015761;
+	font-size: 40px;
+	padding: 20px 0;
+}
+.about-me p {
+	color: black;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 25px;
+	padding: 0px 590px;
+	padding-bottom: 40px;
+}
+.about-me button {
+	background: #f7dc4f;
+	color: #015761;
+	border-style: none;
+	padding: 15px 30px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 15px;
+}
+.about-me button:hover {
+	background: #015761;
+	color: #f7dc4f;
+	transform: scale(1.2);
+	transition: 0.3s;
+}
+
+
+
+
+/*********************
+ Portfolio-1 section code start
+**********************/
+
+.portfolio-1 {
+	width: auto;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.showreel {
+	color: #015761;
+	font-size: 40px;
+	text-align: center;
+	padding: 60px 0;
+}
+.video {
+	background-image: url('./img/action.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.video a {
+	color: white;
+	text-decoration: underline;
+}
+.video a i {
+	border: 1px solid white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 48px;
+	margin: 20px;
+	margin-top: 350px;
+}
+
+
+
+/*********************
+ Portfolio-2 section code start
+**********************/
+
+.portfolio-2 {
+	margin-bottom: 120px;
+}
+.portfolio-2 h2 {
+	color: #015761;
+	font-size: 55px;
+	text-align: center;
+	padding: 60px 0;
+}
+.photo-box {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+.photo-box img {
+	padding: 15px;
+	max-width: 100%;
+}
+
+
+
+
+
+/*********************
+ Contact section code start
+**********************/
+
+.contact {
+	display: flex;
+	height: 100vh;
+}
+
+.contact-left {
+	flex-basis: 50%;
+	background-image: url(./img/contact.PNG);
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.contact-right {
+	background: #015761;
+	flex-basis: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding-right: 200px;
+}
+.h2 {
+	color: #f7dc4f;
+	font-size: 40px;
+}
+.texts {
+	color: white;
+	padding-right: 0px;
+}
+.texts h4 {
+	font-size: 25px;
+	font-weight: 500;
+	padding: 20px 0;
+}
+.texts h5{
+	font-size: 15px;
+	font-weight: 500;
+	padding: 10px 0;
+}
+.texts p {
+	font-weight: 300;
+	font-size: 13px;
+	padding-bottom: 15px;
+}
+.manager, .commercial-agent, .sf-agent {
+	padding-bottom: 15px;
+}
+.contact-logo a i:hover {
+	color: #f7dc4f;
+	transform: scale(1.2);
+	transition: 0.3s;
+}
+.contact-logo a i {
+	color: white;
+	padding-right: 20px !important;
+	transition: 0.3s;
+}
+
+
+
+
+/*********************
+ Footer section code start
+**********************/
+
+.copyright {
+	padding: 30px 0;
+	text-align: center;
+	color: #6f6e6e;
+	font-size: 15px;
+}
+.copyright a {
+	color: #6f6e6e;
+	text-decoration: underline;
+}
+.footer-2 {
+	background: #f1f0f0;
+	padding: 35px;
+}
